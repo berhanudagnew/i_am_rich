@@ -11,10 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 60.0,
@@ -39,19 +41,14 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(children: [
-                  Icon(
+                child: ListTile(
+                  leading: Icon(
                     Icons.phone,
                     color: Colors.teal,
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+                  title: Text(
                     ' + 0 1 2 3 4 5 6 7 8 9',
                     style: TextStyle(
                       color: Colors.teal.shade900,
@@ -59,21 +56,16 @@ class MyApp extends StatelessWidget {
                       fontSize: 20.0,
                     ),
                   ),
-                ]),
+                ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(children: [
-                  Icon(
+                child: ListTile(
+                  leading: Icon(
                     Icons.email,
                     color: Colors.teal,
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+                  title: Text(
                     'babipanda.work@gmail.com',
                     style: TextStyle(
                       color: Colors.teal.shade900,
@@ -81,7 +73,7 @@ class MyApp extends StatelessWidget {
                       fontSize: 20.0,
                     ),
                   ),
-                ]),
+                ),
               )
             ],
           ),
