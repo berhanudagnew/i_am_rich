@@ -1,8 +1,12 @@
 # i_am_rich
 
-A new Flutter project.
+#### Card View Flutter App
 
-## Getting Started
+<p align="center">
+  
+  <img src="https://github.com/berhanudagnew/i_am_rich/blob/main/images/i_am_rich_card_1.png" width="300" heght="320" >
+</p>
+A New Flutter Card View Project.
 
 This project is a starting point for a Flutter application.
 
